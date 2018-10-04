@@ -1,0 +1,21 @@
+.contact-block {
+    margin: 0 auto;
+    width: 80vw;
+    border-top: 10px solid $blue;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 100%;
+
+    h2 {
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,73 @@
+header {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    background: linear-gradient($pinkRGBA, $pinkRGBA), url('../images/coffeeshop_s2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-width: 100%;
+
+    .header-block {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: linear-gradient($pinkRGBA, $pinkRGBA), url('../images/coffeeshop_s2.jpg');
+        // photo by Nick Hillier on Unsplash
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $pink;
+    
+        h1, h3, a {
+            background: none;
+            color: white;
+            font-family: $header-font;
+            text-decoration: none;
+        }
+
+        a {
+            animation: hover 1s ease-in-out infinite;
+            position: absolute;
+            left: 50vw;
+            bottom: 10vh;
+        }
+    }
+
+    nav {
+        max-width: 100%;
+        margin-bottom: 25px;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 25px;
+        
+            a {
+                list-style: none;
+                text-decoration: none;
+            }
+
+            li:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+@keyframes hover {
+    0%, 100% {
+        bottom: 10vh;
+    }
+    50% {
+        bottom: 12vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header nav ul {
+        display: block;
+
+        li {
+            margin-bottom: 1vh;
+        }
+    }
+}

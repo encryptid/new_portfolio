@@ -1,0 +1,68 @@
+.bio-block {
+    text-align: center;
+    border-top: 10px solid $blue;
+    width: 80vw;
+    margin: 0 auto;
+
+    h2, h3 {
+        margin-bottom: 5vh;
+    }
+
+    h2 {
+        margin-top: 5vh;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+
+        .icon {
+            display: block;
+            border: 5px solid $blue;
+            border-radius: 7px;
+            background: $blue;
+
+            svg {
+                margin: 0 10px;
+                width: 150px;
+                fill: $pink;
+                background: $blue;
+            }
+
+            figcaption {
+                font-weight: bold;
+                margin-bottom: 10px;
+                background: $blue;
+                color: $pink;
+            }
+        }
+    }
+
+    p {
+        margin: 2vh auto;
+        line-height: 1.2em;
+        text-align: left;
+        // max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bio-block {
+        p {
+            font-size: 2em;
+        }
+        .icons {
+            display: block;
+
+            figure {
+                margin: 5vh auto;
+                width: 50%;
+            }
+        }
+    }
+}
